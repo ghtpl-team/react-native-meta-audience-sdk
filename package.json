@@ -1,12 +1,12 @@
 {
-  "name": "react-native-fbads",
+  "name": "react-native-meta-audience-sdk",
   "version": "7.1.0",
   "description": "Native Facebook Ads for React Native",
   "repository": {
     "type": "git",
-    "url": "https://github.com/callstack/react-native-fbads"
+    "url": "https://github.com/ghtpl-team/react-native-meta-audience-sdk"
   },
-  "homepage": "https://github.com/callstack/react-native-fbads",
+  "homepage": "https://github.com/ghtpl-team/react-native-meta-audience-sdk",
   "main": "dist/lib/index.js",
   "typings": "dist/types/index.d.ts",
   "directories": {
@@ -23,7 +23,7 @@
   "author": "Suraj Tiwari <surajtiwari020@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
-    "react-native": "*"
+    "react-native": "^0.80.0"
   },
   "dependencies": {
     "@expo/config-plugins": "^4.0.4",
@@ -31,7 +31,8 @@
   },
   "devDependencies": {
     "@types/fbemitter": "^2.0.32",
-    "@types/react-native": "^0.57.4",
+    "@types/react": "^19.1.10",
+    "@types/react-native": "^0.73.0",
     "expo-module-scripts": "^2.0.0",
     "tslint": "^5.11.0",
     "tslint-config-airbnb": "^5.11.0",

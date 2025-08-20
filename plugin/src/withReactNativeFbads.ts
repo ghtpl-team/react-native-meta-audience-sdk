@@ -69,12 +69,12 @@ function getFacebookAdActivity() {
 }
 
 /**
- * Apply react-native-fbads configuration for Expo SDK 44 projects.
+ * Apply react-native-meta-audience-sdk configuration for Expo SDK 44 projects.
  */
 const withReactNativeFbads: ConfigPlugin = (config) => {
   return withFacebookManifest(config);
 };
 
-const pkg = require('react-native-fbads/package.json');
+const pkg = require('react-native-meta-audience-sdk/package.json');
 
 export default createRunOncePlugin(withReactNativeFbads, pkg.name, pkg.version);

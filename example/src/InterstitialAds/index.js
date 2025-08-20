@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {StyleSheet, Dimensions, TouchableHighlight} from 'react-native';
 import {Container, Text} from 'native-base';
-import {InterstitialAdManager} from 'react-native-fbads';
+import {InterstitialAdManager} from 'react-native-meta-audience-sdk';
 import {InterstitialAdPlacementId} from '../Variables';
 
 const {width} = Dimensions.get('window');

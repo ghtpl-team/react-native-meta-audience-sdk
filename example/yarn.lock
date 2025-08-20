@@ -6077,7 +6077,7 @@ react-native-easy-grid@0.2.2:
   dependencies:
     lodash "^4.17.15"
 
-"react-native-fbads@file:..":
+"react-native-meta-audience-sdk@file:..":
   version "6.3.1"
   dependencies:
     fbemitter "^2.1.1"

@@ -3,7 +3,7 @@ version: 2
 defaults: &defaults
   docker:
     - image: circleci/node:10
-  working_directory: ~/react-native-fbads
+  working_directory: ~/react-native-meta-audience-sdk
 
 jobs:
   install-dependencies:
@@ -11,7 +11,7 @@ jobs:
     steps:
       - checkout
       - attach_workspace:
-          at: ~/react-native-fbads
+          at: ~/react-native-meta-audience-sdk
       - restore_cache:
           keys:
             - dependencies-{{ checksum "package.json" }}
@@ -28,14 +28,14 @@ jobs:
     <<: *defaults
     steps:
       - attach_workspace:
-          at: ~/react-native-fbads
+          at: ~/react-native-meta-audience-sdk
       - run: |
           yarn lint
   flow:
     <<: *defaults
     steps:
       - attach_workspace:
-          at: ~/react-native-fbads
+          at: ~/react-native-meta-audience-sdk
       - run: |
           yarn flow
 workflows:

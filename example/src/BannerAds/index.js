@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {StyleSheet, View} from 'react-native';
 import {Container} from 'native-base';
-import {BannerView} from 'react-native-fbads';
+import {BannerView} from 'react-native-meta-audience-sdk';
 import {bannerAdPlacementId} from '../Variables';
 
 export default class BannerAd extends Component {

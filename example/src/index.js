@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {StyleSheet, Dimensions, TouchableHighlight} from 'react-native';
 import {Container, Text} from 'native-base';
 import {Actions} from 'react-native-router-flux';
-import {AdSettings} from 'react-native-fbads';
+import {AdSettings} from 'react-native-meta-audience-sdk';
 
 const {width} = Dimensions.get('window');
 

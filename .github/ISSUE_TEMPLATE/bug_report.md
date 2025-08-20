@@ -27,7 +27,7 @@ about: Report a bug with his library
 
 - Android:
 - iOS:
-- react-native-fbads:
+- react-native-meta-audience-sdk:
 - react-native:
 
 **Ads Environment**

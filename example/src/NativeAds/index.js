@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {NativeAdsManager, AdSettings} from 'react-native-fbads';
+import {NativeAdsManager, AdSettings} from 'react-native-meta-audience-sdk';
 import {Container} from 'native-base';
 import {nativeAdPlacementId} from '../Variables';
 

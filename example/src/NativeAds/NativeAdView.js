@@ -5,7 +5,7 @@ import {
   AdIconView,
   TriggerableView,
   MediaView,
-} from 'react-native-fbads';
+} from 'react-native-meta-audience-sdk';
 
 const {width} = Dimensions.get('window');
 

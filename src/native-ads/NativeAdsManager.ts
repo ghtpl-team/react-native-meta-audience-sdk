@@ -21,7 +21,7 @@ export default class NativeAdsManager {
     nativeAdViewTag: number,
     mediaViewTag: number,
     adIconViewTag: number,
-    clickable: number[]
+    clickable: number[],
   ) {
     if (adIconViewTag > 0 && mediaViewTag > 0) {
       clickable.push(mediaViewTag, adIconViewTag);
@@ -34,7 +34,7 @@ export default class NativeAdsManager {
       nativeAdViewTag,
       mediaViewTag,
       adIconViewTag,
-      clickable
+      clickable,
     );
     return result;
   }
@@ -68,7 +68,7 @@ export default class NativeAdsManager {
           this.isValid = true;
           this.eventEmitter.emit(EVENT_DID_BECOME_VALID);
         }
-      }
+      },
     );
   }
 
@@ -89,13 +89,13 @@ export default class NativeAdsManager {
    * If manager already became valid, it will call the function w/o registering
    * handler for events
    */
-  onAdsLoaded(func: Function): EventSubscription {
+  onAdsLoaded(func: () => void): EventSubscription {
     if (this.isValid) {
       setTimeout(func);
       return {
         context: null,
         listener: () => {},
-        remove: () => {}
+        remove: () => {},
       };
     }
 
@@ -105,7 +105,7 @@ export default class NativeAdsManager {
   /**
    * Used to listening for errors from this native ad manager
    */
-  onAdsError(func: Function): EventSubscription {
+  onAdsError(func: (error?: string) => void): EventSubscription {
     return this.eventEmitter.once(EVENT_DID_BECOME_INVALID, func);
   }
 
