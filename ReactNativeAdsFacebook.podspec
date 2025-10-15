@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
   s.platform      = :ios, '7.0'
   s.dependency      'React'
   s.dependency      'FBAudienceNetwork'
-
+  s.dependency      'FBSDKCoreKit'
+  
   s.source_files  = 'ios/**/*.{h,m}'
 end

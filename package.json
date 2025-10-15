@@ -20,7 +20,7 @@
     "tsc": "tsc --project .",
     "lint": "tslint --project ."
   },
-  "author": "Suraj Tiwari <surajtiwari020@gmail.com>",
+  "author": "Arun Lodhi <arunlodhi@live.com>",
   "license": "MIT",
   "peerDependencies": {
     "react-native": "^0.80.0"
